@@ -1,0 +1,8 @@
+CHECKOUT_BTN="id:checkout"
+CONTINUE_BTN="id:continue"
+FINISH_BTN="id:finish"
+FIRST_NAME_TXT="id:first-name"
+LAST_NAME_TXT="id:last-name"
+POSTAL_CODE_TXT="id:postal-code"
+THANK_YOU_H2="//*[@id='checkout_complete_container']/h2"
+CART_ITEMS_NUM="xpath://*[@class='cart_item']"

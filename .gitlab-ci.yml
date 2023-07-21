@@ -1,0 +1,21 @@
+stages:
+  - functional
+  - e2e
+
+image: marketsquare/robotframework-browser
+
+run-smoke-tests:
+  stage: functional
+  script:
+    - robot -d results -P ./lib -P ./resources tests/functional
+  artifacts:
+    paths:
+      - reports
+
+run-regression-tests:
+    stage: e2e
+    script:
+        - robot -d results -P ./lib -P ./resources tests/e2e
+    artifacts:
+        paths:
+            - reports
