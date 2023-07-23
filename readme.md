@@ -1,3 +1,25 @@
+<p align="center">
+  <a href="#getting-started">Getting Started</a> •
+  <a href="#download">Download</a> •
+  <a href="#project-structure">Project Structure</a>
+</p>
+
+## Getting Started
+
+Python 3.11.4
+
+Selenium Library
+
+Running tests:
+
+```bash
+# Execute all scripts in functional folder
+robot -d results -P ./lib -P ./resources tests/functional
+```
+
+Login Example:
+
+```bash
 *** Settings ***
 Resource            ../resources/page-objects/keywords/login_page.robot
 Resource            ../resources/page-objects/keywords/products_page.robot
@@ -72,3 +94,19 @@ Locked Account
     login_page.Input Password    ${PASSWORD_COMMON}
     login_page.Submit Credentials
     login_page.Error Message Should Be    ${LOGIN_ERROR_MSG_004}
+
+```
+
+## Project Structure
+
+**Test Suites**
+
+Test Suites are located in the `tests/` folder.
+
+Depending on the project, the Test Suites can be organized in multiple `.robot` files and subfolders.
+
+**Resources**
+
+Reusable keywords are stored in `.resource` files in the resources folder.
+
+Also Python keywords in `.py` files can be stored there.
