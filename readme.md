@@ -1,10 +1,13 @@
 <p align="center">
   <a href="#getting-started">Getting Started</a> •
-  <a href="#download">Download</a> •
   <a href="#project-structure">Project Structure</a>
 </p>
 
+![screenshot](https://github.com/namnh663/robot/assets/74748329/dc4683d0-7b10-4895-8a15-3571c9d1f541)
+
 ## Getting Started
+
+Robot Framework
 
 Python 3.11.4
 
