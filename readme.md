@@ -17,6 +17,11 @@ Running tests:
 robot -d results -P ./lib -P ./resources tests/functional
 ```
 
+```bash
+# Execute all scripts in e2e folder
+robot -d results -P ./lib -P ./resources tests/e2e
+```
+
 Login Example:
 
 ```bash
@@ -98,6 +103,8 @@ Locked Account
 ```
 
 ## Project Structure
+
+<img width="259" alt="Screenshot 2023-07-24 at 00 33 05" src="https://github.com/namnh663/robot/assets/74748329/c94b8d43-a1c4-4a9a-aa9f-02b2783d9be5">
 
 **Test Suites**
 
